@@ -18,8 +18,9 @@
 .author_box .transparent_box,
 .commenter_box .transparent_box {
   text-align: center;
+  width: 100%;
 }
-option {
+.author_box select option {
   text-align: center;
 }
 .textarea_box {
