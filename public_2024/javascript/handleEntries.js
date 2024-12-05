@@ -61,7 +61,7 @@ function resetForm() {
 }
 
 const BASE_URL =
-  "https://playlist-eternity.com/";
+  "https://playlist-eternity.com";
 
 function postEntry() {
   const author = document.getElementById("author").value;
@@ -70,7 +70,7 @@ function postEntry() {
   // 등록
   console.log("author:", author);
   axios
-    .post(`${BASE_URL}comments`, {
+    .post(`${BASE_URL}/comments`, {
       author,
       content,
       commenter,
@@ -87,7 +87,7 @@ function postEntry() {
 function deleteEntry(id) {
   //삭제
   axios
-    .delete(`${BASE_URL}comments/${id}`)
+    .delete(`${BASE_URL}/comments/${id}`)
     .then((res) => {
       console.log("Entry deleted:", res.data);
       displayEntries();
@@ -98,7 +98,7 @@ function deleteEntry(id) {
 function displayEntries() {
   // Axios를 사용하여 항목 조회
   axios
-    .get(`${BASE_URL}comments`)
+    .get(`${BASE_URL}/comments`)
     .then((res) => {
       const entriesDiv = document.getElementById("entries");
       entriesDiv.innerHTML = "";
