@@ -61,7 +61,7 @@ function resetForm() {
 }
 
 const BASE_URL =
-  "https://port-0-playlist-eternity-m47c1rlvf34a3653.sel4.cloudtype.app/";
+  "https://playlist-eternity.com/";
 
 function postEntry() {
   const author = document.getElementById("author").value;
