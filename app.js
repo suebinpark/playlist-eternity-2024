@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 const path = require("path");
 const cors = require("cors");
 const base_url =
-  "https://playlist-eternity.com/";
+  "https://playlist-eternity.com";
 
 dotenv.config();
 const entriesRouter = require("./routes/comments");
