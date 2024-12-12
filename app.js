@@ -4,8 +4,6 @@ const dotenv = require("dotenv");
 const path = require("path");
 const cors = require("cors");
 // const base_url = "http://localhost:8080/";
-const base_url =
-  "https://port-0-playlist-eternity-2024-m47c1rlvf34a3653.sel4.cloudtype.app/";
 
 dotenv.config();
 const entriesRouter = require("./routes/comments");
@@ -15,7 +13,7 @@ app.set("port", process.env.PORT || 8080);
 
 app.use(
   cors({
-    origin: base_url, // 클라이언트 배포 URL
+    origin: "https://playlist-eternity.com/", // 클라이언트 배포 URL
     methods: ["GET", "POST", "DELETE"], // 허용할 HTTP 메서드
     credentials: true, // 인증 정보 포함 여부
   })
