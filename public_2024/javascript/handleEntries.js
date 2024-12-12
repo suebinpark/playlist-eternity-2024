@@ -62,8 +62,9 @@ function resetForm() {
 }
 
 // const BASE_URL = "http://localhost:8080/";
-const BASE_URL =
-  "https://port-0-playlist-eternity-2024-m47c1rlvf34a3653.sel4.cloudtype.app/";
+// const BASE_URL =
+//  "https://port-0-playlist-eternity-2024-m47c1rlvf34a3653.sel4.cloudtype.app/";
+const BASE_URL = "https://playlist-eternity.com/";
 
 function postEntry() {
   const author = document.getElementById("author").value;
